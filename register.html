@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kantathee Shop | Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><div class="logo-text">KS</div>
+ Kantathee Shop</a>
+      <div class="navlinks">
+        <a class="pill" href="products.html">Products</a>
+        <a class="pill" href="register.html">Register</a>
+        <a class="pill" href="profile.html">Profile</a>
+        <a class="cart-badge" href="cart.html">ตะกร้า <span class="badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>สมัครสมาชิก</h1>
+      <p>ฟอร์มกรอกข้อมูล: ชื่อ นามสกุล เบอร์โทร อีเมล ที่อยู่จัดส่ง อื่นๆ (ตามเงื่อนไขข้อ 8)</p>
+    </div>
+
+    <div class="card">
+      <div class="bd">
+        <form id="registerForm">
+          <div class="row">
+            <div>
+              <label class="muted">ชื่อ</label>
+              <input class="input" required placeholder="ชื่อ">
+            </div>
+            <div>
+              <label class="muted">นามสกุล</label>
+              <input class="input" required placeholder="นามสกุล">
+            </div>
+          </div>
+          <div style="height:10px"></div>
+          <div class="row">
+            <div>
+              <label class="muted">เบอร์โทร</label>
+              <input class="input" required placeholder="0xx-xxx-xxxx">
+            </div>
+            <div>
+              <label class="muted">อีเมล</label>
+              <input class="input" type="email" required placeholder="name@email.com">
+            </div>
+          </div>
+          <div style="height:10px"></div>
+          <label class="muted">ที่อยู่จัดส่ง</label>
+          <textarea class="input" required placeholder="บ้านเลขที่ / ถนน / แขวง-เขต / จังหวัด / รหัสไปรษณีย์"></textarea>
+          <div style="height:10px"></div>
+          <label class="muted">อื่นๆ (หมายเหตุ)</label>
+          <input class="input" placeholder="เช่น ขอใบกำกับภาษี / ฝากข้อความถึงร้าน">
+          <div style="height:14px"></div>
+          <button class="btn primary" type="submit">สมัครสมาชิก</button>
+          <a class="btn" href="index.html">กลับหน้าแรก</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

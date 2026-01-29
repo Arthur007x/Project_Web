@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kantathee Shop | Checkout</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><div class="logo-text">KS</div>
+ Kantathee Shop</a>
+      <div class="navlinks">
+        <a class="pill" href="products.html">Products</a>
+        <a class="pill" href="cart.html">Cart</a>
+        <a class="pill" href="about.html">About</a>
+        <a class="pill" href="contact.html">Contact</a>
+        <a class="cart-badge" href="cart.html">ตะกร้า <span class="badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>สั่งซื้อ / ชำระเงิน</h1>
+      <p>รายละเอียดวิธีสั่งซื้อ + ช่องทางชำระเงิน (ตามเงื่อนไขข้อ 5)</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="bd">
+          <h2 style="margin-top:0">ขั้นตอนการสั่งซื้อ</h2>
+          <ol class="muted" style="line-height:1.9">
+            <li>เลือกสินค้าในหน้า Products แล้วกด “เพิ่มลงตะกร้า”</li>
+            <li>ไปหน้า Cart เพื่อตรวจสอบรายการและจำนวน</li>
+            <li>กด “ไปชำระเงิน” เพื่อกรอกที่อยู่จัดส่งและเลือกวิธีชำระเงิน</li>
+            <li>ยืนยันคำสั่งซื้อ (ตัวอย่างจะขึ้นแจ้งเตือนสำเร็จ)</li>
+          </ol>
+          <hr class="sep">
+          <div class="notice">
+            <b>ช่องทางชำระเงิน (ตัวอย่าง)</b><br/>
+            • โอนผ่านธนาคาร: กสิกรไทย 123-4-56789-0 (Kantathee Shop)<br/>
+            • พร้อมเพย์: 0xx-xxx-xxxx<br/>
+            • เก็บเงินปลายทาง : +30 บาท
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="bd">
+          <h2 style="margin-top:0">แบบฟอร์มยืนยันการสั่งซื้อ</h2>
+          <form id="checkoutForm">
+            <div class="row">
+              <div>
+                <label class="muted">ชื่อ-นามสกุล</label>
+                <input class="input" required placeholder="เช่น กันตธีร์ พิทโยทัย">
+              </div>
+              <div>
+                <label class="muted">เบอร์โทร</label>
+                <input class="input" required placeholder="0xx-xxx-xxxx">
+              </div>
+            </div>
+            <div style="height:10px"></div>
+            <label class="muted">ที่อยู่จัดส่ง</label>
+            <textarea class="input" required placeholder="บ้านเลขที่ / ถนน / แขวง-เขต / จังหวัด / รหัสไปรษณีย์"></textarea>
+            <div style="height:10px"></div>
+            <label class="muted">วิธีชำระเงิน</label>
+            <select class="input" required>
+              <option value="">-- เลือก --</option>
+              <option>โอนธนาคาร</option>
+              <option>พร้อมเพย์</option>
+              <option>COD (เก็บปลายทาง)</option>
+            </select>
+            <div style="height:14px"></div>
+            <button class="btn primary" style="width:100%" type="submit">ยืนยันสั่งซื้อ</button>
+          </form>
+          <div class="muted" style="margin-top:10px;font-size:13px">
+            * หมายเหตุ: โปรเจกต์ตัวอย่าง ไม่มีระบบหลังบ้านจริง
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

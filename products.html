@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kantathee Shop | Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><div class="logo-text">KS</div>
+ Kantathee Shop</a>
+      <div class="navlinks">
+        <a class="pill" href="products.html">Products</a>
+        <a class="pill" href="gallery.html">Gallery</a>
+        <a class="pill" href="about.html">About</a>
+        <a class="pill" href="contact.html">Contact</a>
+        <a class="pill" href="register.html">Register</a>
+        <a class="pill" href="profile.html">Profile</a>
+        <a class="cart-badge" href="cart.html">ตะกร้า <span class="badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="bd">
+        <div class="toolbar">
+          <div>
+            <h2 style="margin:0">รายการสินค้า</h2>
+            <div class="muted">มีอย่างน้อย 3 ประเภท และประเภทละอย่างน้อย 5 ชิ้น</div>
+          </div>
+          <div style="min-width:220px">
+            <select id="categoryFilter" class="input">
+              <option value="ALL">ทั้งหมด</option>
+              <option value="Headphones">Headphones</option>
+              <option value="Keyboards">Keyboards</option>
+              <option value="Mouse">Mouse</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="productList" class="products" style="margin-top:16px"></div>
+
+    <div class="footer">ปลายทาง: กด “เพิ่มลงตะกร้า” แล้วไปหน้า Cart</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kantathee Shop | Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><div class="logo-text">KS</div>
+ Kantathee Shop</a>
+      <div class="navlinks">
+        <a class="pill" href="products.html">Products</a>
+        <a class="pill" href="gallery.html">Gallery</a>
+        <a class="pill" href="checkout.html">Checkout</a>
+        <a class="cart-badge" href="cart.html">ตะกร้า <span class="badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>ตะกร้าสินค้า</h1>
+      <p>ระบบตะกร้า: เพิ่มสินค้า / เปลี่ยนจำนวน / ลบสินค้า / สรุปยอด</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="bd" id="cartTable"></div>
+      </div>
+      <div id="cartSummary"></div>
+    </div>
+
+    <div class="footer">แก้จำนวนเป็น 0 = ลบสินค้าออกจากตะกร้า</div>
+  </div>
+</body>
+</html>
